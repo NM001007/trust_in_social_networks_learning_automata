@@ -106,7 +106,7 @@ def fatehi_algorithm(network, iterations, source_node, target_node, trust_values
 
     ## Phase3.Aggregating Direct Trust Values
     part_1 = 0
-    part_2 = 0.000000000001
+    part_2 = 0
     for item in W_i:
         if W_i[item]:
             key = (item, target_node)
