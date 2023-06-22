@@ -4,7 +4,7 @@ import networkx as nx
 from nina_fatehi.Algorithm import *
 
 def read_advogato():
-    file_main = open("../DataSet/advogato/advogato_full_reformed.txt", 'r')
+    file_main = open("./DataSet/advogato/advogato_full_reformed.txt", 'r')
     read = file_main.readlines()
     file_main.close()
 
@@ -17,7 +17,7 @@ def read_advogato():
 
     return advogato
 
-def read_dataset():
+def read_BitCoin():
     file = open("./Data/soc-sign-bitcoinalpha.csv", 'r')
     read = file.readlines()
     file.close()
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     # advogato_duplicate = advogato.copy()
     # network = nx.Graph(list(advogato.keys()))
 
-    trust_values = read_dataset()
+    trust_values = read_BitCoin()
     list_of_keys = list(trust_values.keys())
     trust_values_duplicate = trust_values.copy()
     network = nx.Graph(list(trust_values.keys()))
@@ -45,8 +45,7 @@ if __name__ == '__main__':
 
     trust = dict()
 
-    # for item in list(advogato.keys())[13000:14000]:    ##all paths
-    for item in list(trust_values.keys())[10000:12000]:    ##all paths
+    for item in list(trust_values.keys()):    ##all paths
         # advogato = advogato_duplicate.copy()
         advogato = trust_values_duplicate.copy()
         network = nx.Graph(list(advogato.keys()))
