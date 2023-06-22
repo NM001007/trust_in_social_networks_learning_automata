@@ -4,7 +4,7 @@ import networkx as nx
 from nina_fatehi.Algorithm import *
 
 def read_advogato():
-    file_main = open("./DataSet/advogato/advogato_full_reformed.txt", 'r')
+    file_main = open("./Datasets/Advogato/advogato_full_reformed.txt", 'r')
     read = file_main.readlines()
     file_main.close()
 
@@ -18,7 +18,7 @@ def read_advogato():
     return advogato
 
 def read_BitCoin():
-    file = open("./Data/soc-sign-bitcoinalpha.csv", 'r')
+    file = open("./Datasets/BitCoin/BitCoin.txt", 'r')
     read = file.readlines()
     file.close()
     trust_values = dict()
