@@ -44,7 +44,6 @@ if __name__ == '__main__':
     # fatehi_algorithm(network,number_iteration, source, target, advogato)
 
     trust = dict()
-
     for item in list(trust_values.keys()):    ##all paths
         # advogato = advogato_duplicate.copy()
         advogato = trust_values_duplicate.copy()
