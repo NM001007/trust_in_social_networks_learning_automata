@@ -7,7 +7,7 @@ People have been increasingly using online social networks (OSNs) to socialize a
 The implemented algorithm has been experimented on two datasets, containing trust relations between users, obtained from real-world social networks named Advogato and BitCoin. Due to the fact that the datasets are labeled using linguistical (in Advogato) or discrete numerical labels out of the [0:1] range (in BitCoin) which is commonly considered in the realm of trust estimation in online social networks, the dataset labels are transferred in order to map them to continuous trust values between 0 and 1. In this regard, the linguistical labels in Advogato are mapped to trust values of 1.0, 0.8, 0.6 and 0.4, and discrete trust values in BitCoin are mapped using a linear transformation function clearly defined in the main function.
 
 ## Reference
-ref: @article{fatehi2022automata,
+@article{fatehi2022automata,
   title={An automata algorithm for generating trusted graphs in online social networks},
   author={Fatehi, Nina and Shahhoseini, Hadi Shahriar and Wei, Jesse and Chang, Ching-Ter},
   journal={Applied Soft Computing},
